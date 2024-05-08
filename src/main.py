@@ -21,10 +21,10 @@ app = FastAPI(
     contact={"tg": "@evilnotlive"})
 
 origins = [
-    "http://dreamsex.world.tiangolo.com",
     "https://dreamsex.world.tiangolo.com",
-    "http://dreamsex.world",
-    "http://dreamsex.world:8000",
+    "https://dreamsex.world.tiangolo.com",
+    "https://dreamsex.world",
+    "https://dreamsex.world:8000",
 ]
 
 app.add_middleware(
